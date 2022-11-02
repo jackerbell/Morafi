@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Morafi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+영화정보 조회 사이트 입니다. <br>
+현재는 영화정보 조회만 가능하지만, 향후 지속적으로 기능들을 추가하면서 커뮤니티로 발전시킬 계획입니다.<br>
+Morafi는 movie(영화)와 graffiti(낙서장)의 합성어로, 편안한 분위기의 영화 커뮤니티를 만들고자 지은 이름입니다.<br><br><br>
 
-## Available Scripts
+실행화면 <br>
 
-In the project directory, you can run:
+https://user-images.githubusercontent.com/65724413/199396032-84bdea71-64bc-4a95-aece-b68ae548a75a.mp4
 
-### `npm start`
+https://user-images.githubusercontent.com/65724413/199396096-7fa687fc-c666-47bc-826f-d272bb89489b.mp4
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://user-images.githubusercontent.com/65724413/199396140-a032fcd3-ee1b-46d0-b088-f30183cede9d.mp4
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 프로젝트 실행환경
 
-### `npm test`
+운영체제 : window(Chrome,MS Edge)<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Code Editor: Visual Studio Code<br>
 
-### `npm run build`
+Client UI: HTML/CSS, JAVASCRIPT, REACT <br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Server : NodeJS(express.js)<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+DB : MySQL(8.0)<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+실행방법 : 추후 AWS나 다른 온라인 서비스를 이용해 호스팅할 예정입니다. <br>
+          본 프로젝트를 구동시키기 위해서는 위에서 언급한 실행환경에 대한 기본지식이 필요합니다. <br>
+          MySQL에 넣을 DB는 입력문을 전환한 TXT 파일을 넣어놨으므로, CREATE TABLE 입력문부터 먼저 넣고 그 다음 INSERT 입력문으로 데이터를 넣어주시면 됩니다.<br>
+          그 외에 필요한 라이브러리는 Package.JSON을 참고하시기 바랍니다.   <br><br>
 
-### `npm run eject`
+## 프로젝트 설계
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+FE : UI를 구성하는데, 관련된 영화사이트들(네이버영화,라프텔,wwave,netflix.. etc)을 참조했습니다.
+     복잡한 구조보다는 적절한 크기의 영화이미지를 주제별로 묶어서 나열하는 형식으로 영화에 집중이 되도록 화면을 구성했습니다. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+BE : NodeJs(express) 기반의 REST API 서버를 만들었고, MySQL과 연동해서 서버에 저장된 DB를 받아오는 형식으로 설계했습니다. 
+     DB.js 에서 MySQL과 연동이 되도록 코드를 작성했고 server.js 파일에는 DB에 보낼 요청문 및 클라이언트로의 response 코드를 작성했습니다. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+DB : 본래 네이버API와 같은 외부 API를 사용하려 했으나, 데이터가 구체적이지 않거나, 전체조회가 되지 않는 등 한계점이 보였습니다. 
+     그래서 'R'이라는 통계/분석/데이터처리 프로그램을 사용해 네이버 영화 홈페이지에 있는 데이터를 크롤링한 후 엑셀로 정리, MySQL에 입력하여 DB를 생성했습니다. <br><br>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Contribute
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+기획,설계,FE,BE,DB 모두 본인이 직접 작업해서 만들었습니다. <br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
