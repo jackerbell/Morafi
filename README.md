@@ -1,3 +1,10 @@
+# notice!!!!!!!!!!!! (2023-04-24)
+현재 리액트 파일이 소실되어 없습니다. 추후 다른 리액트 프로젝트를 올릴 예정이고 위의 프로젝트를 실제로 한 과정들은 모두 저의 블로그에 담겨 있습니다. →
+<a href="https://jackerbell.github.io/portfolio/Portfolio01/" target="_blank">블로그</a>
+
+<br/>
+<br/>
+
 # Morafi
 
 영화정보 조회 사이트 입니다. <br>
@@ -45,8 +52,3 @@ DB : 본래 네이버API와 같은 외부 API를 사용하려 했으나, 데이�
 
 기획,설계,FE,BE,DB 모두 본인이 직접 작업해서 만들었습니다. <br>
 
-
-
-## notice
-현재 리액트 파일이 소실되어 없습니다. 추후 다른 리액트 프로젝트를 올릴 예정이고 위의 프로젝트를 실제로 한 과정들은 모두 저의 블로그에 담겨 있습니다.
-<a href="https://jackerbell.github.io/portfolio/Portfolio01/" target="_blank">블로그</a>
