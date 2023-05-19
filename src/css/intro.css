@@ -1,0 +1,22 @@
+#introWrap
+{
+  width: 80%;
+  min-height: 500px;
+  background-color: rgb(62, 99, 24);
+  margin: 0 auto;
+  text-align: center;
+}
+
+#introWrap > span 
+{
+  display: inline-block;
+  width: 80%;
+  height: 80%;
+  background-color: rgb(126, 59, 59);
+  margin: 50px 0;
+}
+
+#introWrap > span > p 
+{
+  margin: 20px;
+}
