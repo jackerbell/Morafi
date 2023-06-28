@@ -1,13 +1,6 @@
 # notice (2023-06-15)
 리액트, mui, nodejs를 활용해 새롭게 마이그레이션 했습니다. <a href="https://github.com/jackerbell/renewal-Morafi" target="_blank" rel="noopener noreferrer">Enterance!</a>
 
-# notice (2023-05-19) 
-로컬 뿐아니라 클라우드까지 찾아본 결과 겨우 찾았지만 아쉽게도 완성본이 아니었습니다. 조만간 새로운 프로젝트로 대체할 예정입니다.
-
-# notice!!!!!!!!!!!! (2023-04-24)
-현재 리액트 파일이 소실되어 없습니다. 추후 다른 리액트 프로젝트를 올릴 예정이고 위의 프로젝트를 실제로 한 과정들은 모두 저의 블로그에 담겨 있습니다. →
-<a href="https://jackerbell.github.io/portfolio/Portfolio01/" target="_blank">블로그</a>
-
 <br/>
 <br/>
 
